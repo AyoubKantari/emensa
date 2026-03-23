@@ -1,10 +1,10 @@
 <?php
 
-$db_host = "localhost"; // or '127.0.0.1'
+$db_host = "localhost";
 $db_user = 'root';
-$db_pass = 'Raja-123'; // put your password here
+$db_pass = 'Raja-123'; 
 $db_name = 'emensawerbeseite';
-$db_port = 3306; // default MariaDB port
+$db_port = 3306; 
 
 return [
     'host' => $db_host,
