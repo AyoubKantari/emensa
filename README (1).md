@@ -1,4 +1,4 @@
-# 🍽️ E-Mensa Web-App
+#  E-Mensa Web-App
 
 **PHP MVC Projekt – DBWT Praktikum | FH Aachen**
 
@@ -6,14 +6,14 @@
 
 ---
 
-## 👥 Team
+##  Team
 
-| Vorname | Nachname | Matrikelnummer |
-|---------|----------|----------------|
-| Ayoub   | Kantari  | xxxxxxxxx      |
-| Aymen   | Radi     | xxxxxxxxx      |
+| Vorname | Nachname |
+|---------|----------|
+| Ayoub   | Kantari  | 
+| Aymen   | Radi     | 
 
-> ⚠️ **Matrikelnummern eintragen!**
+
 
 ---
 
@@ -98,7 +98,7 @@ http://127.0.0.1:9000/
 
 ---
 
-## 📁 Projektstruktur
+##  Projektstruktur
 
 ```
 emensa/
@@ -178,32 +178,18 @@ MariaDB
 ## 📧 Newsletter-Validierung
 
 Die Newsletter-Anmeldung prüft:
-- ✅ Name darf nicht leer sein (kein Whitespace-only)
-- ✅ Datenschutzbestimmung muss akzeptiert sein
-- ✅ E-Mail muss gültigem Format entsprechen (`filter_var()`)
-- ✅ Keine Wegwerf-E-Mails von `wegwerfmail.de` oder `trashmail.*`
+-  Name darf nicht leer sein (kein Whitespace-only)
+-  Datenschutzbestimmung muss akzeptiert sein
+-  E-Mail muss gültigem Format entsprechen (`filter_var()`)
+-  Keine Wegwerf-E-Mails von `wegwerfmail.de` oder `trashmail.*`
 
 ---
 
-## 📦 Abhängigkeiten
+##  Abhängigkeiten
 
 | Paket | Version | Zweck |
 |-------|---------|-------|
 | `eftec/bladeone` | ^4.x | Blade-Template-Engine |
-
----
-
-## 🧪 Beispieldateien (`/beispiele`)
-
-| Datei | Aufgabe | Inhalt |
-|-------|---------|--------|
-| `m2_5_strings.php` | A5 | str_replace, substr, trim, Konkatenation |
-| `m2_6a_standardparameter.php` | A6a | Funktion mit Standardparameter |
-| `m2_6b_include.php` | A6b | include + Funktion mehrfach nutzen |
-| `m2_6c_addform.php` | A6c | Formular: addieren & multiplizieren |
-| `m2_6d_array.php` | A6d | Array ausgeben + fehlende Gewinnerjahre |
-| `m2_8a_accesslog.php` | A8a | Zugriffs-Log in Datei schreiben |
-| `m2_8b_showtext.php` | A8b | Suche in Textdatei via GET |
 
 ---
 
