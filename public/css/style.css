@@ -1,0 +1,382 @@
+/* ==================== CSS VARIABLEN ==================== */
+:root {
+    --color-primary: #2e7d32;
+    --color-primary-hover: #1b5e20;
+    --color-danger: #c62828;
+    --color-danger-hover: #b71c1c;
+    --color-accent: #1976d2;
+    --color-border: #d0d0d0;
+    --color-border-dark: #999;
+    --color-bg: #f5f5f5;
+    --color-bg-card: #ffffff;
+    --color-text: #212121;
+    --color-text-muted: #555;
+    --font-main: 'Segoe UI', Arial, sans-serif;
+    --radius: 6px;
+    --transition: 0.2s ease;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--color-bg);
+    padding: 20px;
+}
+
+.content {
+    background-color: var(--color-bg-card);
+    padding: 30px 40px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+#head {
+    border-bottom: 2px solid var(--color-primary);
+    background-color: var(--color-bg-card);
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo {
+    border: 2px solid var(--color-primary);
+    padding: 8px 14px;
+    font-family: var(--font-main);
+    font-weight: bold;
+    color: var(--color-primary);
+    border-radius: var(--radius);
+    letter-spacing: 1px;
+}
+
+nav {
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+nav a {
+    color: var(--color-text);
+    margin: 0 10px;
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: color var(--transition), border-color var(--transition);
+}
+
+nav a:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+    text-decoration: none;
+}
+
+nav .nav-user {
+    margin-left: 20px;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+nav .nav-login {
+    margin-left: 20px;
+    color: var(--color-accent);
+}
+
+nav .nav-logout {
+    margin-left: 10px;
+    color: var(--color-danger);
+}
+
+section {
+    margin: 30px 0;
+    padding-left: 20px;
+}
+
+.section-title {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: var(--font-main);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+}
+
+#ank_schrift, #speizen_schrift, #zahl_schrift, #kontakt_sch {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+    margin: 0 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+}
+
+#ank_Beschreibung {
+    width: 100%;
+    max-width: 700px;
+    min-height: 100px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    margin: 10px 0;
+    padding: 14px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-main);
+    font-size: 0.93rem;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid var(--color-border);
+    padding: 10px 14px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #e8f5e9;
+    transition: background-color var(--transition);
+}
+
+.sort-button {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+.sort-button:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+}
+
+#Zahlen p {
+    background-color: #f4f4f4;
+    padding: 10px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    display: inline-block;
+}
+
+.info {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+#newsletter {
+    background-color: #f7f7f7;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 30px 0;
+    width: 100%;
+    max-width: 440px;
+    font-family: var(--font-main);
+}
+
+.wahl {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.login-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: var(--color-bg-card);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.login-card h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.login-error {
+    background-color: #ffebee;
+    color: var(--color-danger);
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    border-radius: var(--radius);
+    text-align: center;
+    border: 1px solid #ffcdd2;
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    font-family: var(--font-main);
+    transition: border-color var(--transition);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(46,125,50,0.15);
+}
+
+.login-back {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.login-back a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.login-back a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    padding: 9px 18px;
+    font-size: 0.95rem;
+    font-family: var(--font-main);
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+}
+
+#wichtig ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 20px;
+}
+
+#wichtig ul li {
+    padding: 6px 0;
+    color: var(--color-text-muted);
+}
+
+#feun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.square {
+    width: 100%;
+    max-width: 800px;
+    height: 240px;
+    border: 2px dashed var(--color-border-dark);
+    background-color: #fafafa;
+    border-radius: var(--radius);
+    margin: 10px auto 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-border-dark);
+    font-size: 0.9rem;
+}
+
+#footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 16px 20px;
+    margin-top: 30px;
+    font-size: 0.88rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-container a {
+    color: #c8e6c9;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.footer-container a:hover {
+    color: white;
+    text-decoration: underline;
+}
